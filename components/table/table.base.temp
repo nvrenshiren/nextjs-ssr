@@ -1,0 +1,36 @@
+import * as React from 'react'
+import { ServiceApi } from '../../server/interface/base.interface'
+import { ColumnProps } from 'antd/lib/table/interface'
+
+/**
+ * 待定.
+ */
+
+interface Props<R extends {}, T extends {}> {
+  //用到的列表接口
+  api: ServiceApi<R, T>
+  //额外的参数
+  extraParams?: T
+  //初始传入的数据
+  initData?: R
+  //表格每行列的配置
+  columns: ColumnProps<any>
+  //当前页面的参数名
+  indexKeyName?: keyof T
+  //每页数量的参数名
+  sizeKeyName?: keyof T
+  //itemList在接口返回时的具体结构
+  itemsKeyName?: string[]
+}
+
+class TableListBase extends React.Component<Props<any, any>> {
+  constructor(props: any) {
+    super(props)
+  }
+  render() {
+    return <div>内容</div>
+  }
+  componentDidMount() {}
+  componentWillUnmount() {}
+}
+export default TableListBase

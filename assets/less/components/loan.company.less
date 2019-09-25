@@ -1,0 +1,22 @@
+#LoanCompanyForm {
+  width: 400px;
+  margin: 0 auto;
+  .Divider {
+    width: 450px;
+    margin: 20px auto;
+    .ant-divider-with-text {
+      color: @primary-color;
+      font-size: 24px;
+      &:before,
+      &::after {
+        border-top-color: @primary-color;
+        opacity: 0.6;
+      }
+    }
+  }
+  .form-error {
+    text-align: center;
+    margin-bottom: 15px;
+    color: @primary-color;
+  }
+}

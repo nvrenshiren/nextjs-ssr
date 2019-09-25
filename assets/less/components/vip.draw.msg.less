@@ -1,0 +1,34 @@
+#Vip-Draw-Message {
+  position: relative;
+  .vip-draw-content {
+    width: 375px;
+    height: 310px;
+    padding-top: 180px;
+    &.draw-none {
+      background: url('/static/images/vipCenter/draw-none.png') no-repeat;
+    }
+    &.draw-ok {
+      background: url('/static/images/vipCenter/draw-ok.png') no-repeat;
+    }
+    h2 {
+      text-align: center;
+      color: @primary-color;
+    }
+    .ant-btn {
+      margin: 10px auto;
+    }
+    p {
+      color: @primary-color;
+    }
+    .anticon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 50px;
+      color: @primary-color;
+      background: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}

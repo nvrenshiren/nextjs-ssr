@@ -1,0 +1,37 @@
+#MyInterest {
+  width: 80%;
+  margin: 0 auto;
+  .tag-box {
+    line-height: 30px;
+    span {
+      color: @primary-color;
+      &.tag {
+        color: #fff;
+        display: inline-block;
+        padding: 0 10px;
+        border-radius: 20px;
+        background: orange;
+        margin-left: 10px;
+      }
+    }
+    small {
+      color: @primary-color;
+    }
+  }
+  .tag-list {
+    a {
+      color: #383838;
+      margin: 10px 15px;
+      display: inline-block;
+      i {
+        color: #ccc;
+        margin-right: 5px;
+      }
+      &.in {
+        i {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

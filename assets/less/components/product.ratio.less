@@ -1,0 +1,48 @@
+dl.borrow-ratio {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  dt.ratio-tip {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    display: inline-block;
+    span {
+      position: absolute;
+      &.ratio-span {
+        width: 100%;
+        text-align: center;
+        background: #fd9d08;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        bottom: 10px;
+      }
+      &.ratio-arrow {
+        bottom: 1px;
+        overflow: hidden;
+        margin-left: -6px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 10px solid #fd9e09;
+      }
+    }
+  }
+  dd.ratio-bg {
+    margin: 0;
+    height: 8px;
+    border-radius: 4px;
+    background: #ccc;
+    overflow: hidden;
+    text-align: left;
+    span {
+      vertical-align: top;
+      display: inline-block;
+      height: 100%;
+      background: linear-gradient(90deg, #fdb349, #ff7e2b);
+    }
+  }
+}

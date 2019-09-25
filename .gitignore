@@ -1,0 +1,61 @@
+# dependencies
+node_modules
+!/yarn.lock
+test/node_modules
+
+# coverage
+.nyc_output
+
+# test output
+test/**/out
+.DS_Store
+
+# Editors
+**/.idea
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+
+
+
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+
+# Dependency directories
+node_modules/
+
+
+# Optional npm cache directory
+.npm
+
+
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+
+
+
+#build
+.next
+dist
+

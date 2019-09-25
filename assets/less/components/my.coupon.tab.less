@@ -1,0 +1,60 @@
+#MyCouponTab {
+  .coupon-list {
+    .coupon-des {
+      font-size: 18px;
+      b {
+        margin: 0 10px;
+        color: @primary-color;
+      }
+    }
+    .coupon-item {
+      margin: 10px 0;
+      .coupon-img {
+        position: relative;
+        padding: 10px;
+        background: #fff9e7;
+        .coupon-bg {
+          width: 195px;
+          height: 100px;
+          background: url('/static/images/vipCenter/coupon-bg.png') no-repeat;
+          color: @primary-color;
+          strong {
+            display: inline-block;
+            font-size: 40px;
+            small {
+              font-size: 18px;
+            }
+          }
+          span {
+            display: inline-block;
+            width: 20px;
+            font-size: 16px;
+          }
+        }
+        i.siteIcon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        &.gray {
+          background: #f7f8fa;
+          .coupon-bg {
+            background: url('/static/images/vipCenter/coupon-no-bg.png')
+              no-repeat;
+            color: #fff;
+          }
+        }
+      }
+      .coupon-info {
+        p {
+          padding: 0 10px;
+          margin: 5px 0;
+        }
+        span {
+          margin-left: 5px;
+          color: #999;
+        }
+      }
+    }
+  }
+}

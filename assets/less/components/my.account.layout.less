@@ -1,0 +1,79 @@
+#My-Account-Layout {
+  width: 1180px;
+  margin: 20px auto;
+
+  min-height: 200px;
+  .ant-layout {
+    background: #fff;
+    min-height: 200px;
+    .ant-layout-sider {
+      background-color: transparent;
+      border-right: 1px solid #eaeaea;
+    }
+  }
+  .user-info {
+    background: url('/static/images/my/user-bg.png') no-repeat;
+    background-size: cover;
+    height: 360px;
+  }
+  .user-info-item {
+    position: relative;
+  }
+  .user-info-tag {
+    color: #fff;
+    font-size: 25px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    &.success {
+      background: #fff;
+      color: @primary-color;
+      + .success-tip {
+        display: inline-block;
+      }
+    }
+    + .success-tip {
+      position: absolute;
+      font-size: 20px;
+      top: -8px;
+      right: 8px;
+      display: none;
+      color: rgba(250, 85, 39, 0.8);
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+  .my-nav-box {
+    .nav-group-name {
+      margin-top: 30px;
+      font-size: 20px;
+      color: @primary-color;
+    }
+    .nav-group {
+      text-align: center;
+      .nav-item {
+        margin: 10px 0;
+        i {
+          color: rgb(250, 170, 0);
+          &.active {
+            color: rgba(250, 85, 39, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.my-user-tag.ant-tooltip {
+  .ant-tooltip-inner {
+    color: @primary-color;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .ant-tooltip-arrow {
+    border-bottom-color: rgba(255, 255, 255, 0.9);
+  }
+}

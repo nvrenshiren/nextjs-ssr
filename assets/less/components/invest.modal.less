@@ -1,0 +1,101 @@
+#InvestModal {
+  background: #fff;
+  overflow: hidden;
+  .invest-modal-confirm {
+    width: 650px;
+    .invest-modal-content {
+      margin: 20px 30px 0;
+      font-size: 16px;
+      p {
+        margin-bottom: 15px;
+        span {
+          color: @primary-color;
+          margin-left: 10px;
+        }
+      }
+      p.invest-tenderamount {
+        background: #eee;
+        padding: 5px 10px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .invest-coupon-list {
+      margin: 20px 30px;
+      h3 {
+        margin: 0;
+        padding: 0 10px;
+        border-top: 2px solid @primary-color;
+        font-size: 18px;
+        display: inline-block;
+        color: @primary-color;
+      }
+      .coupon-slide {
+        margin: 10px 0;
+        .coupon-item {
+          background: url('/static/images/invest/coupon-bg.png') center center
+            no-repeat;
+          text-align: center;
+          line-height: 80px;
+          color: @primary-color;
+          font-size: 30px;
+          cursor: pointer;
+          &.active {
+            background: url('/static/images/invest/coupon-bg-on.png') center
+              center no-repeat;
+            color: #fff;
+          }
+          &.nouse {
+            background: url('/static/images/invest/coupon-bg-nouse.png') center
+              center no-repeat;
+            color: #fff;
+            cursor: not-allowed;
+          }
+        }
+      }
+      p.tip {
+        color: @primary-color;
+      }
+    }
+  }
+  h2 {
+    margin: 0;
+    background: @primary-color;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 20px;
+    box-shadow: 0 0 5px #666;
+    i {
+      margin-top: 5px;
+      font-size: 40px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+  .invest-modal-license {
+    width: 800px;
+    .invest-license-box {
+      height: 610px;
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 15px;
+      h3 {
+        font-weight: bold;
+        font-size: 24px;
+      }
+      h4 {
+        font-weight: bold;
+        margin: 1em 0;
+        font-size: 20px;
+      }
+      ol {
+        li {
+          list-style: inherit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+#Vip-Address-List {
+  background-image: url('/static/images/vipCenter/convert-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  background-color: #fff;
+  border: 4px solid #fff4b4;
+  border-radius: 25px;
+  .address-list-box {
+    width: 560px;
+    padding: 50px 20px 20px;
+    position: relative;
+    .text-cn {
+      a {
+        display: inline-block;
+        line-height: 25px;
+        font-size: 16px;
+        margin: 20px 0;
+        i {
+          font-size: 20px;
+          margin-right: 5px;
+          vertical-align: text-bottom;
+        }
+      }
+    }
+    .close-modal {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      font-size: 30px;
+      color: @primary-color;
+    }
+  }
+  ul.address-list-ul {
+    height: 329px;
+    overflow-y: auto;
+    li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #f7f7f7;
+      opacity: 0.6;
+      &.active {
+        opacity: 1;
+        background: #fffce8;
+      }
+      .item-address {
+        margin: 10px 0;
+      }
+      .item-name {
+        color: #333;
+        font-weight: bold;
+      }
+      a {
+        margin-left: 20px;
+      }
+    }
+  }
+}

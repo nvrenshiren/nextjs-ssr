@@ -1,0 +1,49 @@
+#MyDePositPage {
+  .bank-tab-box {
+    .my-tabpane-content {
+      margin: 0 15px;
+      .my-tabpane-sub {
+        .tabs-deposit-main {
+          margin-bottom: 20px;
+          padding: 10px 20px;
+          background: #f7f7f7;
+          line-height: 40px;
+          .deposit-tip {
+            color: @primary-color;
+            margin-left: 20px;
+          }
+          p {
+            line-height: 2;
+          }
+        }
+        .tabs-deposit-tip {
+          dt {
+            color: @primary-color;
+          }
+        }
+        .deposit-info {
+          margin-bottom: 15px;
+          > div {
+            padding: 20px 0;
+            border: 2px solid #e8e8e8;
+            &:first-child {
+              border-right: none;
+            }
+            &:hover {
+              background: @primary-color;
+              color: #fff;
+              border-color: @primary-color;
+              h3 {
+                color: #fff;
+              }
+            }
+            h3 {
+              color: @primary-color;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
