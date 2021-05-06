@@ -31,7 +31,7 @@
     "react-images": "^0.5.19",
     "react-redux": "^7.0.3",
     "redux-thunk": "^2.3.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@types/ali-oss": "^6.0.3",
